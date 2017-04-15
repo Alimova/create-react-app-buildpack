@@ -6,12 +6,12 @@ import React from 'react';
 export const Form = (props) => {
     return (
         <div><h1>{props.login ? 'Login' : 'Signup'}</h1>
-            <label> username: </label>
+            <label>&nbsp;username: </label>
             <input type="text" value={props.username} onChange={props.handleOnChangeUserName} /><br /><br />
-            <label> password: </label>
-            <input type="text" value={props.password} onChange={props.handleOnChangePassword} /><br />
+            <label>&nbsp;password: </label>
+            <input type="text" value={props.password} onChange={props.handleOnChangePassword} /><br /><br />
 
-            <button onClick={''} value={props.login ? 'Login' : 'Signup'}  />
+            &nbsp;<button onClick={''} > {props.login ? 'Login' : 'Signup'}</button>
         </div>
     )
 }
